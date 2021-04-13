@@ -7,8 +7,10 @@ let score = document.querySelector('#score')
 let result = 0
 let currentTime = timeLeft.textContent
 
-function randomSquare() {
+let oneHit = true
 
+function randomSquare() {
+    oneHit = true
     square.forEach(className => {
         className.classList.remove('tranda')
         className.classList.remove('squarehittered')
@@ -32,9 +34,11 @@ square.forEach(element => {
 
             // square.className = "hitanimation"
             // element.className = "hitanimation"
-
-            result = result + 1
-            score.textContent = result
+            if (oneHit) {
+                result = result + 1
+                score.textContent = result
+                oneHit = false
+            }
         }
     })
 })
