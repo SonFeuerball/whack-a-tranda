@@ -1,8 +1,15 @@
 .square {
+    position: relative;
+    overflow: hidden;
+
     width: 200px;
     height: 200px;
     border-style: solid;
     border-color: lightseagreen;
+}
+
+.squarehittered {
+    background: url(../img/trash_panda_profile_200_dead.png);
 }
 
 .grid {
@@ -17,4 +24,48 @@
 .tranda {
     background-image: url(../img/trash_panda_profile_200.png);
     background-size: cover;
+}
+
+/* .tranda:active {
+
+} */
+
+.hittranda {
+    animation-name: gothit;
+    animation-duration: 0.5s;
+}
+
+.hitanimation {
+    animation-name: changeColor;
+    animation-duration: 0.2s;
+}
+
+@keyframes gothit {
+    0% {
+        background: url(../img/trash_panda_profile_200.png);
+        transform: rotate(45deg);
+    }
+    25% {
+        background: url(../img/trash_panda_profile_200.png);
+        transform: scale(3, 3);
+        transform: rotate(90deg);
+    }
+    50% {
+
+        background: url(../img/trash_panda_profile_200.png);
+        transform: rotate(180deg);
+    }
+    100% {
+        background: url(../img/trash_panda_profile_200.png);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        border-color: lightseagreen;
+    }
+    100% {
+        border-color: lightsalmon;
+    }
 }
