@@ -29,7 +29,7 @@ square.forEach(element => {
 
 function moveTranda() {
     let squareTimerId = null
-    squareTimerId = setInterval(randomSquare, 1000)
+    squareTimerId = setInterval(randomSquare, 400)
 }
 
 moveTranda()
@@ -40,14 +40,7 @@ function countDown() {
 
     if (currentTime === 0) {
         clearInterval(timerId)
-        alert(result + ' is not Enough. MORE!')
-
-        //TODO restart
-        // result = 0
-        // document.querySelector('.score').textContent = 0
-        // currentTime = 10
-        // document.querySelector('#time-left').textContent = 10
-
+        alert(result + ' is not Enough. MORE!') ? "" : window.location.reload()
     }
 }
 
