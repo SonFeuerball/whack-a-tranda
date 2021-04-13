@@ -28,8 +28,8 @@ square.forEach(element => {
 })
 
 function moveTranda() {
-    let timerId = null
-    timerId = setInterval(randomSquare, 1000)
+    let squareTimerId = null
+    squareTimerId = setInterval(randomSquare, 1000)
 }
 
 moveTranda()
