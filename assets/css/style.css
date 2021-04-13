@@ -1,0 +1,20 @@
+.square {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: lightseagreen;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 618px;
+    height: 618px;
+}
+
+.tranda {
+    background-image: url(../img/trash_panda_profile_200.png);
+    background-size: cover;
+}
